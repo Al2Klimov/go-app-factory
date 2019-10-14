@@ -5,4 +5,4 @@ cd /go/src/*/*/*
 
 dep ensure
 .travis-ci/compile.sh
-go test -failfast -race -v -cover
+go test -failfast -race -v -cover ./...

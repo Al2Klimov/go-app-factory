@@ -1,8 +1,8 @@
 #!/bin/bash
 set -exo pipefail
 
-cd /go/src/*/*/*
+cd /src
 
-dep ensure
+go mod download
 .travis-ci/compile.sh
 go test -failfast -race -v -cover ./...
